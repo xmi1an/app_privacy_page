@@ -1,343 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - BCA Practical</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0F172A;
-            --surface-color: #1E293B;
-            --card-color: #334155;
-            --text-primary: #FFFFFF;
-            --text-secondary: #94A3B8;
-            --text-muted: #64748B;
-            --accent-blue: #00D4FF;
-            --accent-teal: #00BFA5;
-            --accent-orange: #FF6B35;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - BCA Practical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0F172A;
+      --surface-color: #1E293B;
+      --card-color: #334155;
+      --text-primary: #FFFFFF;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      --accent-blue: #00D4FF;
+      --accent-teal: #00BFA5;
+      --accent-orange: #FF6B35;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Outfit', sans-serif;
-            background: var(--bg-color);
-            color: var(--text-secondary);
-            line-height: 1.8;
-            min-height: 100vh;
-        }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-secondary);
+      line-height: 1.8;
+      min-height: 100vh;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding: 40px;
-            background: linear-gradient(135deg,
-                rgba(0, 212, 255, 0.15) 0%,
-                rgba(0, 191, 165, 0.1) 100%);
-            border-radius: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
-        }
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding: 40px;
+      background: linear-gradient(135deg,
+          rgba(0, 212, 255, 0.15) 0%,
+          rgba(0, 191, 165, 0.1) 100%);
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+    }
 
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-teal));
-            border-radius: 20px;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
-        }
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-teal));
+      border-radius: 20px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+    }
 
-        .header h1 {
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 10px;
-        }
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
 
-        .header .subtitle {
-            color: var(--accent-blue);
-            font-weight: 500;
-        }
+    .header .subtitle {
+      color: var(--accent-blue);
+      font-weight: 500;
+    }
 
-        .last-updated {
-            color: var(--text-muted);
-            font-size: 14px;
-            margin-top: 15px;
-            padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            display: inline-block;
-        }
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-top: 15px;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      display: inline-block;
+    }
 
-        /* Content Sections */
-        .section {
-            background: var(--surface-color);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    /* Content Sections */
+    .section {
+      background: var(--surface-color);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .section:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-        }
+    .section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
 
-        .section h2 {
-            font-size: 22px;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+    .section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-        .section h2::before {
-            content: '';
-            width: 4px;
-            height: 24px;
-            background: linear-gradient(180deg, var(--accent-blue), var(--accent-teal));
-            border-radius: 2px;
-        }
+    .section h2::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: linear-gradient(180deg, var(--accent-blue), var(--accent-teal));
+      border-radius: 2px;
+    }
 
-        .section h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin: 20px 0 10px;
-        }
+    .section h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 20px 0 10px;
+    }
 
-        .section p {
-            margin-bottom: 12px;
-        }
+    .section p {
+      margin-bottom: 12px;
+    }
 
-        .section ul {
-            list-style: none;
-            padding-left: 0;
-        }
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
-        .section ul li {
-            position: relative;
-            padding-left: 24px;
-            margin-bottom: 10px;
-        }
+    .section ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+    }
 
-        .section ul li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--accent-teal);
-            font-weight: bold;
-        }
+    .section ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-teal);
+      font-weight: bold;
+    }
 
-        /* Highlight Box */
-        .highlight-box {
-            background: linear-gradient(135deg,
-                rgba(0, 212, 255, 0.1) 0%,
-                rgba(0, 191, 165, 0.08) 100%);
-            border: 1px solid rgba(0, 212, 255, 0.2);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 16px 0;
-        }
+    /* Highlight Box */
+    .highlight-box {
+      background: linear-gradient(135deg,
+          rgba(0, 212, 255, 0.1) 0%,
+          rgba(0, 191, 165, 0.08) 100%);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+    }
 
-        .highlight-box.warning {
-            background: linear-gradient(135deg,
-                rgba(255, 107, 53, 0.1) 0%,
-                rgba(255, 107, 53, 0.05) 100%);
-            border-color: rgba(255, 107, 53, 0.3);
-        }
+    .highlight-box.warning {
+      background: linear-gradient(135deg,
+          rgba(255, 107, 53, 0.1) 0%,
+          rgba(255, 107, 53, 0.05) 100%);
+      border-color: rgba(255, 107, 53, 0.3);
+    }
 
-        /* Contact Section */
-        .contact-link {
-            color: var(--accent-blue);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+    /* Contact Section */
+    .contact-link {
+      color: var(--accent-blue);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-        .contact-link:hover {
-            color: var(--accent-teal);
-        }
+    .contact-link:hover {
+      color: var(--accent-teal);
+    }
 
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-muted);
-            font-size: 14px;
-        }
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
 
-        .footer a {
-            color: var(--accent-blue);
-            text-decoration: none;
-        }
+    .footer a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
 
-        .footer .app-name {
-            font-weight: 600;
-            color: var(--text-primary);
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
+    .footer .app-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
-        /* Responsive */
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px 16px;
-            }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 16px;
+      }
 
-            .header {
-                padding: 30px 20px;
-            }
+      .header {
+        padding: 30px 20px;
+      }
 
-            .header h1 {
-                font-size: 26px;
-            }
+      .header h1 {
+        font-size: 26px;
+      }
 
-            .section {
-                padding: 24px 20px;
-            }
+      .section {
+        padding: 24px 20px;
+      }
 
-            .section h2 {
-                font-size: 18px;
-            }
-        }
+      .section h2 {
+        font-size: 18px;
+      }
+    }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
 
-        .section {
-            animation: fadeInUp 0.5s ease forwards;
-        }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        .section:nth-child(1) { animation-delay: 0.1s; }
-        .section:nth-child(2) { animation-delay: 0.2s; }
-        .section:nth-child(3) { animation-delay: 0.3s; }
-        .section:nth-child(4) { animation-delay: 0.4s; }
-        .section:nth-child(5) { animation-delay: 0.5s; }
-        .section:nth-child(6) { animation-delay: 0.6s; }
-        .section:nth-child(7) { animation-delay: 0.7s; }
-    </style>
+    .section {
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    .section:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .section:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .section:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .section:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .section:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .section:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    .section:nth-child(7) {
+      animation-delay: 0.7s;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="app-icon">📚</div>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">BCA Practical</p>
-            <span class="last-updated">Last updated: December 13, 2024</span>
-        </header>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="app-icon">📚</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">BCA Practical</p>
+      <span class="last-updated">Last updated: December 13, 2024</span>
+    </header>
 
-        <!-- Introduction -->
-        <section class="section">
-            <h2>Introduction</h2>
-            <p>BCA Practical ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
-        </section>
+    <!-- Introduction -->
+    <section class="section">
+      <h2>Introduction</h2>
+      <p>BCA Practical ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how
+        we collect, use, and safeguard your information when you use our mobile application.</p>
+    </section>
 
-        <!-- Information We Collect -->
-        <section class="section">
-            <h2>Information We Collect</h2>
+    <!-- Information We Collect -->
+    <section class="section">
+      <h2>Information We Collect</h2>
 
-            <h3>Information You Provide</h3>
-            <ul>
-                <li>We do not require you to create an account or provide personal information to use our app.</li>
-            </ul>
+      <h3>Information You Provide</h3>
+      <ul>
+        <li>We do not require you to create an account or provide personal information to use our app.</li>
+      </ul>
 
-            <h3>Automatically Collected Information</h3>
-            <ul>
-                <li>We do not collect any personal data automatically.</li>
-                <li>We do not track your location.</li>
-                <li>We do not access your contacts, camera, or microphone.</li>
-            </ul>
-        </section>
+      <h3>Automatically Collected Information</h3>
+      <ul>
+        <li>We do not collect any personal data automatically.</li>
+        <li>We do not track your location.</li>
+        <li>We do not access your contacts, camera, or microphone.</li>
+      </ul>
+    </section>
 
-        <!-- How We Use Your Information -->
-        <section class="section">
-            <h2>How We Use Your Information</h2>
-            <p>The app functions entirely offline for displaying programming practicals. The optional AI assistant feature requires an internet connection and uses third-party AI services (OpenRouter) to process your questions.</p>
+    <!-- How We Use Your Information -->
+    <section class="section">
+      <h2>How We Use Your Information</h2>
+      <p>The app functions entirely offline for displaying programming practicals. The optional AI assistant feature
+        requires an internet connection and uses third-party AI services (OpenRouter) to process your questions.</p>
 
-            <div class="highlight-box">
-                <strong>🔒 No personal data is stored on our servers.</strong>
-            </div>
-        </section>
+      <div class="highlight-box">
+        <strong>🔒 No personal data is stored on our servers.</strong>
+      </div>
+    </section>
 
-        <!-- Third-Party Services -->
-        <section class="section">
-            <h2>Third-Party Services</h2>
-            <p>Our app may use the following third-party services:</p>
-            <ul>
-                <li><strong>OpenRouter API:</strong> For AI-powered explanations (optional feature). Their privacy policy applies to data processed through their service.</li>
-            </ul>
-        </section>
+    <!-- Third-Party Services -->
+    <section class="section">
+      <h2>Third-Party Services</h2>
+      <p>Our app may use the following third-party services:</p>
+      <ul>
+        <li><strong>Google Play Billing:</strong> For processing in-app purchases. Google handles all payment
+          processing securely. We do not have access to your payment details.</li>
+        <li><strong>OpenAI API:</strong> For AI-powered explanations (optional premium feature). Query data is processed
+          to generate explanations but is not stored permanently.</li>
+        <li><strong>Supabase:</strong> For secure API routing. No personal data is stored.</li>
+      </ul>
+    </section>
 
-        <!-- Data Security -->
-        <section class="section">
-            <h2>Data Security</h2>
-            <p>We implement appropriate security measures to protect any information processed through our app.</p>
-        </section>
+    <!-- In-App Purchases -->
+    <section class="section">
+      <h2>In-App Purchases</h2>
+      <p>Our app offers optional premium features through in-app purchases:</p>
+      <ul>
+        <li>Monthly subscription (₹49/month)</li>
+        <li>Yearly subscription (₹299/year)</li>
+        <li>Lifetime access (₹499 one-time)</li>
+      </ul>
 
-        <!-- Children's Privacy -->
-        <section class="section">
-            <h2>Children's Privacy</h2>
-            <p>Our app does not collect personal information from anyone, including children under the age of 13.</p>
-        </section>
+      <h3>Payment Processing</h3>
+      <p>All payments are processed securely through <strong>Google Play Billing</strong>. We do not collect, store, or
+        have access to your payment information (credit card numbers, bank details, etc.).</p>
 
-        <!-- Changes -->
-        <section class="section">
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-        </section>
+      <h3>Purchase Data We Store</h3>
+      <p>The following data is stored locally on your device:</p>
+      <ul>
+        <li>Premium status (whether you have an active subscription)</li>
+        <li>AI explanation cache (for faster access to previously generated explanations)</li>
+      </ul>
 
-        <!-- Contact -->
-        <section class="section">
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <div class="highlight-box">
-                📧 Email: <a href="mailto:jadavmilan009@gmail.com" class="contact-link">jadavmilan009@gmail.com</a>
-            </div>
-        </section>
+      <div class="highlight-box">
+        <strong>🔒 Your purchase data never leaves your device.</strong> It is stored in local app storage and is
+        deleted only when you uninstall the app or clear app data.
+      </div>
 
-        <!-- Consent -->
-        <section class="section">
-            <h2>Consent</h2>
-            <p>By using our app, you consent to our Privacy Policy.</p>
-        </section>
+      <h3>Refund Policy</h3>
+      <p>Refunds are handled by Google Play according to their refund policy. Please contact Google Play Support for
+        refund requests.</p>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="app-name">BCA Practical</p>
-            <p>Made with ❤️ by <a href="https://github.com/xmi1an" target="_blank">xmi1an</a></p>
-            <p style="margin-top: 20px;">© 2025 BCA Practical. All rights reserved.</p>
-        </footer>
-    </div>
+    <!-- Data Security -->
+    <section class="section">
+      <h2>Data Security</h2>
+      <p>We implement appropriate security measures to protect any information processed through our app:</p>
+      <ul>
+        <li>All network communications use HTTPS encryption</li>
+        <li>API keys are securely stored on server-side, not in the app</li>
+        <li>Purchase verification is handled through Google Play's secure systems</li>
+      </ul>
+    </section>
+
+    <!-- Children's Privacy -->
+    <section class="section">
+      <h2>Children's Privacy</h2>
+      <p>Our app is designed for educational purposes and is suitable for all ages. We do not collect personal
+        information from anyone, including children under the age of 13.</p>
+      <p>In-app purchases require parental consent or a Google Play family payment method for users under 18.</p>
+    </section>
+
+    <!-- Changes -->
+    <section class="section">
+      <h2>Changes to This Privacy Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+        Privacy Policy on this page.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or our in-app purchases, please contact us at:</p>
+      <div class="highlight-box">
+        📧 Email: <a href="mailto:jadavmilan009@gmail.com" class="contact-link">jadavmilan009@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- Consent -->
+    <section class="section">
+      <h2>Consent</h2>
+      <p>By using our app and making in-app purchases, you consent to our Privacy Policy and agree to the terms
+        outlined herein.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="app-name">BCA Practical</p>
+      <p>Made with ❤️ by <a href="https://github.com/xmi1an" target="_blank">xmi1an</a></p>
+      <p style="margin-top: 20px;">© 2025 BCA Practical. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
+
 </html>
