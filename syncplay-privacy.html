@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SyncPlay</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f0f23;
+            --bg-card: #1a1a2e;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--bg-card);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin: 40px 0 15px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(180deg, var(--primary), #a855f7);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin: 15px 0 15px 25px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 15px;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SyncPlay</div>
+            <p class="subtitle">Privacy Policy</p>
+            <span class="last-updated">Last Updated: January 16, 2026</span>
+        </header>
+
+        <main>
+            <p>Welcome to SyncPlay! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our application.</p>
+
+            <h2>Information We Collect</h2>
+            <p>SyncPlay collects minimal information necessary to provide our synchronized video watching service:</p>
+            <ul>
+                <li><strong>Nickname:</strong> A display name you choose to identify yourself in watch sessions. This is stored locally on your device.</li>
+                <li><strong>Session Data:</strong> When you create or join a watch session, we temporarily store session information (room codes, playback positions, participant nicknames) to enable synchronization.</li>
+                <li><strong>Device Storage Access:</strong> We access your device's video files only when you explicitly select them for playback. We do not upload or store your videos on our servers.</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li>To enable synchronized video playback between session participants</li>
+                <li>To display participant names within watch sessions</li>
+                <li>To maintain playback state across app restarts</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Important:</strong> We do not sell, trade, or rent your personal information to third parties. Your video files never leave your device.</p>
+            </div>
+
+            <h2>Data Storage & Security</h2>
+            <p>We use Firebase Realtime Database to store session synchronization data. This data includes:</p>
+            <ul>
+                <li>Session room codes</li>
+                <li>Playback timestamps and states</li>
+                <li>Participant nicknames (not linked to personal identity)</li>
+            </ul>
+            <p>Session data is automatically deleted when all participants leave a session or after a period of inactivity.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>SyncPlay uses the following third-party services:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> For real-time session synchronization. Firebase's privacy policy can be found at <a href="https://firebase.google.com/support/privacy" target="_blank" style="color: var(--primary);">firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h2>Permissions</h2>
+            <p>SyncPlay requests the following permissions:</p>
+            <ul>
+                <li><strong>Internet Access:</strong> Required for session synchronization</li>
+                <li><strong>Read Storage/Media:</strong> Required to access video files you select for playback</li>
+            </ul>
+
+            <h2>Children's Privacy</h2>
+            <p>SyncPlay is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Delete your locally stored preferences at any time by clearing app data</li>
+                <li>Leave sessions, which removes your participation data</li>
+                <li>Request information about your data by contacting us</li>
+            </ul>
+
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <p><a href="mailto:jadavmilan009@gmail.com">jadavmilan009@gmail.com</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 SyncPlay. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
